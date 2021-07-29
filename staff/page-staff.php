@@ -1,23 +1,23 @@
+<?php
+ /* Template Name: staff
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>診療について | 歯科テンプレート1</title>
-  <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/style.css" />
+  <title>スタッフ紹介 | 歯科テンプレート1</title>
+  <?php get_header(); ?>
 </head>
 
 <body>
-  <div class="treatment-wrapper animsition">
+  <div class="staff-wrapper animsition">
     <header id="header" class="p-header">
       <div class="logo">
-        <a class="animsition-link" href="/">
-          <img src="/images/common/riv_logo_official2.png" alt="">
+        <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="">
         </a>
       </div>
       <!-- /.logo -->
@@ -27,19 +27,19 @@
         <nav class="pc-nav">
           <ul class="pc-nav__list">
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/first/first.html">初めての方へ</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/first')); ?>">初めての方へ</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/treatment/treatment.html">診療について</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/treatment')); ?>">診療について</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/staff')); ?>">スタッフ紹介</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
             </li>
           </ul>
         </nav>
@@ -58,94 +58,118 @@
       <!-- /.l-action-sp__buttons -->
     </header>
     <!-- /.p-header -->
-    <div class="treatment-contents">
+    <div class="staff-contents">
       <div id="c-topview" class="c-topview">
         <div class="c-topview__inner">
           <div class="c-topview__img">
-            <img src="/images/home/medical__2.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/reception@pc.jpg" alt="">
           </div>
-          <h2 class="c-topview__title clip-js1 left">
-            診療について
+          <h2 class="st-topview__title clip-js1 left">
+            スタッフ紹介
           </h2>
         </div>
       </div>
       <div class="l-content" id="content">
         <div class="c-container">
-          <div class="tr-message">
-            <div class="tr-message__inner appear up">
+          <div class="st-message">
+            <div class="st-message__inner appear up">
               <h2 class="c-head01 item">
-                <span>RivRound歯科医院の診療コンセプト</span>
-                <p>削って詰めての<br class="view-pc">
-                  繰り返しを終えるために</p>
+                <p>専門性を活かしたチーム医療</p>
               </h2>
-              <div class="c-txtarea01 item">
-                <p class="c-txt-sm">
-                  「歯が痛くなってから歯医者に行く」ということを繰り返していると、たび重なる治療によって、ますます歯は削られ、いずれは歯を失ってしまうことにつながります。一度削った歯は、元の状態に戻ることはできないのです。
-                </p>
-                <p class="c-txt-sm">ご自身にあった予防プログラムを実践し、きちんとケアをすれば、この2つの病気は予防が可能で、生涯ご自身の歯で過ごすことができます。</p>
-                <p class="c-txt-sm">その場しのぎの治療ではなく、しっかりとご自身の健康に向き合いメインテナンスをしていく。</p>
-                <p class="c-txt-sm">それが私たちが当たり前に取り組む予防医療です。</p>
-              </div>
-            </div>
-            <div class="tr-message__photo">
-              <img class="parallax" src="/images/home/treatment.jpg" alt="">
-              <img class="parallax" src="/images/home/whitenig__2.jpg" alt="">
-            </div>
-          </div>
-          <!-- /tr-message -->
-          <div class="tr-menu">
-            <div class="tr-menu__inner appear up">
-              <h2 class="c-head01 item">
-                <span>RivRound歯科医院の診療科目</span>
-                <p>あらゆるお悩みに<br class="view-pc">
-                  幅広くお答えするために</p>
-              </h2>
-              <div class="c-txtarea01 item">
-                <p class="c-txt-sm">
-                  鶴見歯科クリニックでは、患者さんの病状や生活背景に合わせて柔軟に対応すべく、幅広く治療法をご用意しております。また、当院で対応できないような、より専門性の高い処置についても、高次医療機関（大学病院など）と連携をとりながら診療していきます。
-                </p>
-              </div>
-              <ul class="tr-menu__list item">
-                <li><span>一般歯科</span></li>
-                <li><span>歯科口腔外科</span></li>
-                <li><span>矯正歯科</span></li>
-                <li><span>小児歯科</span></li>
-              </ul>
-              <div class="c-txtarea01 item">
-                <p class="c-txt-sm">
-                  どんなに良い治療を施したとしても、それを維持する方法を知らない、あるいは実践しなければいずれ不具合が生じてしまいます。治療の繰り返しにならないよう、予防を軸とした診療の流れに沿って治療を進めていきます。
-                </p>
+              <div class="st-message__text item">
+                <p class="c-txt-sm">RivRound歯科クリニックでは、スタッフがそれぞれの専門性を活かすことで、最適な医療をご提供いたします。</p>
               </div>
             </div>
           </div>
-          <!-- /tr-menu -->
+          <!-- /st-message -->
+          <div class="st-staff">
+            <div class="st-staff__inner appear up">
+              <div class="heading-group item">
+                <h2 class="heading-en">DOCTOR</h2>
+                <h3 class="heading-normal">歯科医師</h3>
+              </div>
+              <div class="st-staff__block item">
+                <figure class="doctor__photo staff__photo"><img src="<?php echo get_template_directory_uri(); ?>/images/home/staff__1@sp.jpg"></figure>
+                <div class="st-staff__profile">
+                  <div class="st-staff__name">
+                    <h3>院長</h3>
+                    <h4>利部 翔太</h4>
+                  </div>
+                  <div class="st-staff__item">
+                    <h5>出身</h5>
+                    <p>福岡県福岡市</p>
+                  </div>
+                  <div class="st-staff__item">
+                    <h5>担当</h5>
+                    <p>一般歯科治療全般</p>
+                  </div>
+                  <div class="st-staff__item">
+                    <h5>経歴</h5>
+                    <ul>
+                      <li>東京医科歯科大学歯学部歯学科卒業</li>
+                      <li>東京医科歯科大学歯学部付属病院インプラント科</li>
+                      <li>医療法人ADCアップルデンタルセンター勤務</li>
+                    </ul>
+                  </div>
+                  <div class="st-staff__item">
+                    <h5>所属学会</h5>
+                    <ul>
+                      <li>日本インプラント学会（専門医取得：1112号）</li>
+                      <li>日本こども学会</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="heading-group item">
+                <h2 class="heading-en">STAFF</h2>
+                <h3 class="heading-normal">スタッフ</h3>
+              </div>
+              <div class="st-staff__block item">
+                <figure class="doctor__photo staff__photo"><img src="<?php echo get_template_directory_uri(); ?>/images/home/staff__2@sp.jpg"></figure>
+                <div class="st-staff__profile">
+                  <div class="st-staff__name">
+                    <h3>歯科衛生士</h3>
+                    <h4>利部 美紀</h4>
+                  </div>
+                  <div class="st-staff__item">
+                    <h5>出身</h5>
+                    <p>福岡県北九州市</p>
+                  </div>
+                  <div class="st-staff__item">
+                    <h5>経歴</h5>
+                    <p>北九州歯科衛生士専門学校</p>
+                  </div>
+                  <div class="st-staff__item">
+                    <h5>資格</h5>
+                    <p>歯周病認定歯科衛生士（日本歯周病学会）</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <nav class="btn-category appear up">
             <ul class="item">
-              <li><a class="animsition-link" href="/first/first.html"><span
-                    class="btn-category__first"></span><i>初めての方へ</i></a></li>
-              <li><a class="animsition-link" href="/treatment/treatment.html"><span
-                    class="btn-category__care"></span><i>診療について</i></a></li>
-              <li><a class="animsition-link" href="/staff/staff.html"><span
-                    class="btn-category__staff"></span><i>スタッフ紹介</i></a></li>
-              <li class="u-hidden-pc"><a class="animsition-link" href="/faq/faq.html"><span
-                    class="btn-category__faq"></span><i>よくあるご質問</i></a>
+              <li><a href=" <?php echo esc_url( home_url('/first')); ?>"><span class="btn-category__first"></span><i>初めての方へ</i></a></li>
+              <li><a href=" <?php echo esc_url( home_url('/treatment')); ?>"><span class="btn-category__care"></span><i>診療について</i></a></li>
+              <li><a href=" <?php echo esc_url( home_url('/staff')); ?>"><span class="btn-category__staff"></span><i>スタッフ紹介</i></a></li>
+              <li class="u-hidden-pc"><a href=" <?php echo esc_url( home_url('/faq')); ?>"><span class="btn-category__faq"></span><i>よくあるご質問</i></a>
               </li>
             </ul>
           </nav>
           <nav class="btn-topicpath">
             <ul>
-              <li><a class="animsition-link" href="/">TOP</a></li>
-              <li>診療について</li>
+              <li><a href=" <?php echo esc_url( home_url('/')); ?>">TOP</a></li>
+              <li>スタッフ紹介</li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
-    <!-- /.treatment-contents -->
+    <!-- ./staff-contents -->
     <footer class="p-footer">
       <div class="p-footer__label">
         <h2 class="p-footer__logo">
-          <img src="/images/common/riv_logo_official2.png" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" />
         </h2>
         <p class="p-footer__subject">
           一般歯科 / 歯科口腔外科 / 矯正歯科 / 小児歯科
@@ -250,12 +274,12 @@
       <!-- /.p-open-time -->
       <nav class="p-footer__nav">
         <ul>
-          <li><a href="/first/first.html" class="animsition-link m-button-arrow-l">初めての方へ</a></li>
-          <li><a href="/treatment/treatment.html" class="animsition-link m-button-arrow-l">診療について</a></li>
-          <li><a href="/staff/staff.html" class="animsition-link m-button-arrow-l">スタッフ紹介</a></li>
-          <li><a href="/faq/faq.html" class="animsition-link m-button-arrow-l">よくあるご質問</a></li>
-          <li><a href="/news/news.html" class="animsition-link m-button-arrow-l">お知らせ</a></li>
-          <li><a href="/recruit/recruit.html" class="animsition-link m-button-arrow-l">採用情報</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/first')); ?>" class="animsition-link m-button-arrow-l">初めての方へ</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/treatment')); ?>" class="animsition-link m-button-arrow-l">診療について</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/staff')); ?>" class="animsition-link m-button-arrow-l">スタッフ紹介</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/faq')); ?>" class="animsition-link m-button-arrow-l">よくあるご質問</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/news')); ?>" class="animsition-link m-button-arrow-l">お知らせ</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/recruit')); ?>" class="animsition-link m-button-arrow-l">採用情報</a></li>
         </ul>
       </nav>
       <div class="p-footer__copyright">
@@ -267,12 +291,12 @@
       <div class="l-menu-sp__inner">
         <nav class="l-menu-sp__nav">
           <ul>
-            <li><a class="animsition-link" href="/first/first.html">初めての方へ</a></li>
-            <li><a class="animsition-link" href="/treatment/treatment.html">診療について</a></li>
-            <li><a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a></li>
-            <li><a class="animsition-link" href="/faq/faq.html">よくあるご質問</a></li>
-            <li><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-            <li><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/first')); ?>">初めての方へ</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/treatment')); ?>">診療について</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/staff')); ?>">スタッフ紹介</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a></li>
           </ul>
           <div class="reserve-btn-wrap">
             <div class="reserve-btn-tel">
@@ -293,18 +317,10 @@
     </div>
     <!-- /.l-menu-sp -->
   </div>
-  <!-- /.treatment-wrapper -->
+  <!-- /.staff-wrapper -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../scripts/vendor/animsition.min.js"></script>
-  <script src="../scripts/vendor/simpleParallax.min.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll.js"></script>
-  <script src="../scripts/libs/text-animation.js"></script>
-  <script src="../scripts/libs/parallax.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
-  <script src="../scripts/libs/date.js"></script>
-  <script src="../scripts/c-main.js"></script>
+  <?php get_template_part('includes/c-footer');
+      ?>      
 </body>
 
 </html>

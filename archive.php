@@ -6,10 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>歯科テンプレート3/news</title>
-  <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="../styles/style.css">
+  <?php get_header(); ?>
 </head>
 
 <body>
@@ -17,7 +14,7 @@
     <header id="header" class="p-header">
       <div class="logo">
         <a class="animsition-link" href="/">
-          <img src="/images/common/riv_logo_official2.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="">
         </a>
       </div>
       <!-- /.logo -->
@@ -27,19 +24,19 @@
         <nav class="pc-nav">
           <ul class="pc-nav__list">
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/first/first.html">初めての方へ</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/first')); ?>">初めての方へ</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/treatment/treatment.html">診療について</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/treatment')); ?>">診療について</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/staff')); ?>">スタッフ紹介</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
             </li>
           </ul>
         </nav>
@@ -62,7 +59,7 @@
       <div class="c-topview">
         <div class="c-topview__inner">
           <div class="c-topview__img">
-            <img src="/images/home/kid-space.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/kid-space.jpg" alt="">
           </div>
         </div>
       </div>
@@ -72,52 +69,28 @@
           <p class="contents-subtitle">お知らせ</p>
         </h2>
         <ul class="c-news__list">
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2021.4.5</span>
-              <p class="c-news__tit">新型コロナウィルス感染予防について。</p>
-            </a>
-          </li>
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2021.1.5</span>
-              <p class="c-news__tit">東京都緊急事態宣言について。</p>
-            </a>
-          </li>
-          <li class="c-news__item">
-            <a href="/news/news-single.html" class="c-news__link animsition-link">
-              <span class="c-news__date">2020.11.5</span>
-              <p class="c-news__tit">時短営業について。</p>
-            </a>
-          </li>
+          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+            <li class="c-news__item">
+              <a href="<?php the_permalink() ;?>" class="c-news__link animsition-link">
+                <span class="c-news__date"><?php echo get_the_date(); ?></span>
+                <?php the_post_thumbnail('thumbnail'); ?>
+                <p class="c-news__tit"><?php the_title(); ?></p>
+              </a>
+            </li>
+          <?php endwhile; ?>
+          <?php endif; ?>
         </ul>
-        <ul class="page-numbers">
-          <li>
-            <span aria-current="page" class="page-numbers current">1</span>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">2</a>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">3</a>
-          </li>
-          <li>
-            <span class="page-numbers dots">…</span>
-          </li>
-          <li>
-            <a class="page-numbers" href="#">6</a>
-          </li>
-          <li>
-            <a class="next page-numbers" href="#">次のページへ</a>
-          </li>
-        </ul>
+        <!-- <ul class="page-numbers">  -->
+          <!-- pagenesion -->
+        <?php if( function_exists ("the_pagination") ) the_pagination(); ?>
+        <!-- </ul> -->
       </div>
     </section>
     <!-- /.news-top -->
     <footer class="p-footer">
       <div class="p-footer__label">
         <h2 class="p-footer__logo">
-          <img src="/images/common/riv_logo_official2.png" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" />
         </h2>
         <p class="p-footer__subject">
           一般歯科 / 歯科口腔外科 / 矯正歯科 / 小児歯科
@@ -220,12 +193,12 @@
       <!-- /.p-open-time -->
       <nav class="p-footer__nav">
         <ul>
-          <li><a href="/first/first.html" class="animsition-link m-button-arrow-l">初めての方へ</a></li>
-          <li><a href="/treatment/treatment.html" class="animsition-link m-button-arrow-l">診療について</a></li>
-          <li><a href="/staff/staff.html" class="animsition-link m-button-arrow-l">スタッフ紹介</a></li>
-          <li><a href="/faq/faq.html" class="animsition-link m-button-arrow-l">よくあるご質問</a></li>
-          <li><a href="/news/news.html" class="animsition-link m-button-arrow-l">お知らせ</a></li>
-          <li><a href="/recruit/recruit.html" class="animsition-link m-button-arrow-l">採用情報</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/first')); ?>" class="animsition-link m-button-arrow-l">初めての方へ</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/treatment')); ?>" class="animsition-link m-button-arrow-l">診療について</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/staff')); ?>" class="animsition-link m-button-arrow-l">スタッフ紹介</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/faq')); ?>" class="animsition-link m-button-arrow-l">よくあるご質問</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/news')); ?>" class="animsition-link m-button-arrow-l">お知らせ</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/recruit')); ?>" class="animsition-link m-button-arrow-l">採用情報</a></li>
         </ul>
       </nav>
       <div class="p-footer__copyright">
@@ -237,12 +210,12 @@
       <div class="l-menu-sp__inner">
         <nav class="l-menu-sp__nav">
           <ul>
-            <li><a class="animsition-link" href="/first/first.html">初めての方へ</a></li>
-            <li><a class="animsition-link" href="/treatment/treatment.html">診療について</a></li>
-            <li><a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a></li>
-            <li><a class="animsition-link" href="/faq/faq.html">よくあるご質問</a></li>
-            <li><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-            <li><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
+            <li><a class="animsition-link" href="<?php echo esc_url( home_url('/first')); ?>">初めての方へ</a></li>
+            <li><a class="animsition-link" href="<?php echo esc_url( home_url('/treatment')); ?>">診療について</a></li>
+            <li><a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">スタッフ紹介</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a></li>
+            <li><a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">お知らせ</a></li>
+            <li><a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">採用情報</a></li>
           </ul>
           <div class="reserve-btn-wrap">
             <div class="reserve-btn-tel">
@@ -264,12 +237,7 @@
     <!-- /.l-menu-sp -->
   </div>
   <!-- /.main-wrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../scripts/vendor/animsition.min.js"></script>
-  <script src="../scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
-  <script src="../scripts/libs/date.js"></script>
+  <?php get_template_part('includes/c-footer'); ?> 
 </body>
 
 </html>

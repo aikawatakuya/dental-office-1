@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-size: 0.95em;
   color: #4b4747;
 }
@@ -134,14 +134,14 @@ a:active {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/icon_arrow--right.svg);
+  background-image: url(../images/common/icon_arrow--right.svg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .btn-category__first {
-  background-image: url(/images/home/store__2.jpg);
+  background-image: url(../images/home/store__2.jpg);
   display: block;
   background-position: top center;
   background-repeat: no-repeat;
@@ -149,7 +149,7 @@ a:active {
 }
 
 .btn-category__care {
-  background-image: url(/images/home/medical__3.jpg);
+  background-image: url(../images/home/medical__3.jpg);
   display: block;
   background-position: top center;
   background-repeat: no-repeat;
@@ -157,7 +157,7 @@ a:active {
 }
 
 .btn-category__staff {
-  background-image: url(/images/home/reception@pc.jpg);
+  background-image: url(../images/home/reception@pc.jpg);
   display: block;
   background-position: center;
   background-repeat: no-repeat;
@@ -165,7 +165,7 @@ a:active {
 }
 
 .btn-category__faq {
-  background-image: url(/images/home/room.jpg);
+  background-image: url(../images/home/room.jpg);
   display: block;
   background-position: top center;
   background-repeat: no-repeat;
@@ -217,7 +217,7 @@ a:active {
   margin-left: 2.1333333333vw;
   -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
-  background-image: url(/images/common/icon_arrow--right.svg);
+  background-image: url(../images/common/icon_arrow--right.svg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -256,11 +256,11 @@ a:active {
   position: absolute;
   top: 4px;
   right: 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 10px;
   width: 10px;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -274,7 +274,7 @@ a:active {
 .c-head01 span {
   color: #026302;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .c-head01 p {
@@ -348,7 +348,7 @@ a:active {
 }
 
 .m-button-arrow-l::before {
-  content: '';
+  content: "";
   width: 6px;
   height: 6px;
   border: 0px;
@@ -474,13 +474,13 @@ a:active {
 }
 
 .p-header .l-action-sp__button-access::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 37%;
   left: 24%;
   height: 3.7vw;
   width: 3.7vw;
-  background-image: url(/images/common/ico-map-white.png);
+  background-image: url(../images/common/ico-map-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -492,13 +492,13 @@ a:active {
 }
 
 .p-header .l-action-sp__button-tel::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 37%;
   left: 15%;
   height: 3.7vw;
   width: 3.7vw;
-  background-image: url(/images/common/phone-white-line.png);
+  background-image: url(../images/common/phone-white-line.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -603,14 +603,14 @@ a:active {
 }
 
 .l-menu-sp .reserve-btn-wrap .reserve-btn-net span::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 12px;
   right: 5px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -620,14 +620,14 @@ a:active {
 }
 
 .l-menu-sp .reserve-btn-wrap .reserve-btn-tel span::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 13px;
   right: 10px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -733,12 +733,12 @@ a:active {
   background-size: auto 4vw;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 10px;
   bottom: 0;
-  background-image: url(/images/line_arrow.svg);
+  background-image: url(../images/line_arrow.svg);
   background-position: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -953,7 +953,7 @@ a:active {
 .p-footer__back > a::before {
   -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
-  content: '';
+  content: "";
   display: block;
   width: 3.2vw;
   height: 1.2vw;
@@ -978,11 +978,11 @@ a:active {
   position: absolute;
   top: 2px;
   left: 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 15px;
   width: 15px;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1087,7 +1087,7 @@ a:active {
   width: 1.6vw;
   height: 2.6666666667vw;
   margin-left: 2.1333333333vw;
-  background-image: url(/images/common/icon_arrow--right.svg);
+  background-image: url(../images/common/icon_arrow--right.svg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1130,7 +1130,7 @@ a:active {
   width: 1.6vw;
   height: 2.6666666667vw;
   margin-left: 2.1333333333vw;
-  background-image: url(/images/common/icon_arrow--right.svg);
+  background-image: url(../images/common/icon_arrow--right.svg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1189,7 +1189,7 @@ a:active {
   font-size: 10vw;
   display: block;
   width: 0.75em;
-  color: #8DC21F;
+  color: #8dc21f;
   font-weight: 400;
 }
 
@@ -1221,7 +1221,7 @@ a:active {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1.3333333333vw 5.3333333333vw;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
 }
 
 .first-wrapper .fs-promise__btn a i {
@@ -1240,7 +1240,7 @@ a:active {
   width: 1.6vw;
   height: 2.6666666667vw;
   margin-left: 2.1333333333vw;
-  background-image: url(/images/common/icon_arrow--right.svg);
+  background-image: url(../images/common/icon_arrow--right.svg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1289,7 +1289,7 @@ a:active {
   width: 1.6vw;
   height: 2.6666666667vw;
   margin-left: 2.1333333333vw;
-  background-image: url(/images/common/icon_arrow--right.svg);
+  background-image: url(../images/common/icon_arrow--right.svg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1337,7 +1337,7 @@ a:active {
   display: block;
   width: 100%;
   height: 100%;
-  border: 1px solid #8DC21F;
+  border: 1px solid #8dc21f;
   border-radius: 100%;
 }
 
@@ -1400,7 +1400,7 @@ a:active {
   width: 1.6vw;
   height: 2.6666666667vw;
   margin-left: 2.1333333333vw;
-  background-image: url(/images/common/icon_arrow--right.svg);
+  background-image: url(../images/common/icon_arrow--right.svg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1426,7 +1426,7 @@ a:active {
 
 .staff-wrapper .st-staff .heading-en {
   text-align: center;
-  color: #8DC21F;
+  color: #8dc21f;
   font-weight: 400;
 }
 
@@ -1467,7 +1467,7 @@ a:active {
 
 .staff-wrapper .st-staff__item h5 {
   margin-bottom: 2.6666666667vw;
-  color: #8DC21F;
+  color: #8dc21f;
   font-weight: 400;
 }
 
@@ -1501,7 +1501,7 @@ a:active {
 
 .contents-recruit .c-table01 td {
   line-height: 1.5;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 599px) {
@@ -1608,7 +1608,7 @@ a:active {
 }
 
 .faq-wrapper .faq dt::before {
-  content: 'Q';
+  content: "Q";
   position: absolute;
   top: 4vw;
   left: 0;
@@ -1628,7 +1628,7 @@ a:active {
 }
 
 .faq-wrapper .faq dt span::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1636,12 +1636,12 @@ a:active {
   right: 0;
   width: 4vw;
   height: 2.7vw;
-  background-image: url(/images/common/icon_arrow_large--bottom.svg);
+  background-image: url(../images/common/icon_arrow_large--bottom.svg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .faq-wrapper .faq dd {
@@ -1649,7 +1649,7 @@ a:active {
 }
 
 .faq-wrapper .faq dd::before {
-  content: 'A';
+  content: "A";
   position: absolute;
   top: 1vw;
   left: 0;
@@ -1692,7 +1692,7 @@ a:active {
 
 .c-news__link p {
   margin-top: 2vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__date {
@@ -1733,7 +1733,7 @@ a:active {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -1750,7 +1750,7 @@ a:active {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1793,7 +1793,7 @@ a:active {
 
 .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__title {
@@ -1829,13 +1829,13 @@ a:active {
 }
 
 .c-news-sl__contents p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link {
   margin: 0 0 10vw 0;
   text-align: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link a {
@@ -2483,7 +2483,7 @@ a:active {
 }
 
 .bg-img-zoom {
-  background-image: url(images/image-1.jpg);
+  background-image: url(../images/image-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2496,7 +2496,7 @@ a:active {
 
 .img-bg50::before {
   display: block;
-  content: '';
+  content: "";
   padding-top: 50%;
 }
 

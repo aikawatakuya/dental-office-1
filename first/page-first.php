@@ -1,3 +1,7 @@
+<?php
+ /* Template Name: first
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -5,19 +9,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>初めての方へ | 歯科テンプレート1</title>
-  <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/style.css" />
+  <?php get_header(); ?>
 </head>
 
 <body>
   <div class="first-wrapper animsition">
     <header id="header" class="p-header">
       <div class="logo">
-        <a class="animsition-link" href="/">
-          <img src="/images/common/riv_logo_official2.png" alt="">
+        <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="">
         </a>
       </div>
       <!-- /.logo -->
@@ -27,19 +27,19 @@
         <nav class="pc-nav">
           <ul class="pc-nav__list">
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/first/first.html">初めての方へ</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/first')); ?>">初めての方へ</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/treatment/treatment.html">診療について</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/treatment')); ?>">診療について</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/staff')); ?>">スタッフ紹介</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
             </li>
           </ul>
         </nav>
@@ -62,7 +62,7 @@
       <div id="c-topview" class="c-topview">
         <div class="c-topview__inner">
           <div class="c-topview__img">
-            <img class="view-sp" src="/images/home/store__2.jpg" alt="">
+            <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/store__2.jpg" alt="">
           </div>
           <h2 class="c-topview__title clip-js1 left">
             初めての方へ
@@ -78,7 +78,7 @@
           </h2>
           <div class="fs-message-wrap item">
             <div class="fs-message__img">
-              <img class="fs-message__photo" src="/images/home/staff__1.jpg" alt="">
+              <img class="fs-message__photo" src="<?php echo get_template_directory_uri(); ?>/images/home/staff__1.jpg" alt="">
             </div>
             <div class="fs-message__text">
               <p class="c-txt-sm">心臓が“命の源”であるならば、歯は“健康の源”です。</p>
@@ -90,7 +90,7 @@
                 <span class="u-text-smaller">院長</span><span class="u-text-bold">利部 翔太</span>
               </p>
               <div class="fs-message__button">
-                <a href="/staff/staff.html">院長のプロフィールを見る</a>
+                <a href=" <?php echo esc_url( home_url('/staff')); ?>">院長のプロフィールを見る</a>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
           </h2>
           <div class="fs-promise__block appear up">
             <div class="fs-promise__img cover-slide">
-              <img class="img-zoom" src="/images/home/medical__4.jpg" alt="">
+              <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/medical__4.jpg" alt="">
             </div>
             <div class="fs-promise__desc item">
               <h3 class="num-tit">
@@ -121,7 +121,7 @@
           </div>
           <div class="fs-promise__block appear up">
             <div class="fs-promise__img cover-slide">
-              <img class="img-zoom" src="/images/home/room.jpg" alt="">
+              <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/room.jpg" alt="">
             </div>
             <div class="fs-promise__desc item">
               <h3 class="num-tit">
@@ -138,7 +138,7 @@
           </div>
           <div class="fs-promise__block appear up">
             <div class="fs-promise__img cover-slide">
-              <img class="img-zoom" src="/images/home/patient__1.jpg" alt="">
+              <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/patient__1.jpg" alt="">
             </div>
             <div class="fs-promise__desc item">
               <h3 class="num-tit">
@@ -177,24 +177,24 @@
         <!-- /fa-message -->
         <div class="fa-gallery">
           <ul class="fa-gallery__list appear up">
-            <li class="fa-gallery__item item" data-target="1"><img src="/images/home/store__2.jpg" alt=""><span
+            <li class="fa-gallery__item item" data-target="1"><img src="<?php echo get_template_directory_uri(); ?>/images/home/store__2.jpg" alt=""><span
                 class="fa-gallery__name">外観</span></li>
-            <li class="fa-gallery__item item" data-target="2"><img src="/images/home/clinic__1@pc.jpg" alt=""><span
+            <li class="fa-gallery__item item" data-target="2"><img src="<?php echo get_template_directory_uri(); ?>/images/home/clinic__1@pc.jpg" alt=""><span
                 class="fa-gallery__name">受付・待合</span>
             </li>
-            <li class="fa-gallery__item item" data-target="3"><img src="/images/home/room.jpg" alt=""><span
+            <li class="fa-gallery__item item" data-target="3"><img src="<?php echo get_template_directory_uri(); ?>/images/home/room.jpg" alt=""><span
                 class="fa-gallery__name">診療室</span></li>
-            <li class="fa-gallery__item item" data-target="4"><img src="/images/home/rentogen.jpg" alt=""><span
+            <li class="fa-gallery__item item" data-target="4"><img src="<?php echo get_template_directory_uri(); ?>/images/home/rentogen.jpg" alt=""><span
                 class="fa-gallery__name">レントゲン室</span></li>
-            <li class="fa-gallery__item item" data-target="5"><img src="/images/home/img-machine5@2x.jpg" alt=""><span
+            <li class="fa-gallery__item item" data-target="5"><img src="<?php echo get_template_directory_uri(); ?>/images/home/img-machine5@2x.jpg" alt=""><span
                 class="fa-gallery__name">滅菌スペース</span></li>
-            <li class="fa-gallery__item item" data-target="6"><img src="/images/home/kid-space.jpg" alt=""><span
+            <li class="fa-gallery__item item" data-target="6"><img src="<?php echo get_template_directory_uri(); ?>/images/home/kid-space.jpg" alt=""><span
                 class="fa-gallery__name">キッズ・フレンドリー</span>
             </li>
-            <li class="fa-gallery__item item" data-target="7"><img src="/images/home/toilet.jpg" alt=""><span
+            <li class="fa-gallery__item item" data-target="7"><img src="<?php echo get_template_directory_uri(); ?>/images/home/toilet.jpg" alt=""><span
                 class="fa-gallery__name">お手洗い・洗面所</span>
             </li>
-            <li class="fa-gallery__item item" data-target="8"><img src="/images/home/car-space.jpg" alt=""><span
+            <li class="fa-gallery__item item" data-target="8"><img src="<?php echo get_template_directory_uri(); ?>/images/home/car-space.jpg" alt=""><span
                 class="fa-gallery__name">駐車スペース</span></li>
           </ul>
         </div>
@@ -205,10 +205,10 @@
             <div class="m-block-access__visual item">
               <div class="m-block-access__photos">
                 <div class="m-block-access__photo">
-                  <img src="/images/home/store__2.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/store__2.jpg" alt="" />
                 </div>
                 <div class="m-block-access__photo">
-                  <img src="/images/home/clinic__1@pc.jpg" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/clinic__1@pc.jpg" alt="" />
                 </div>
               </div>
               <div class="m-block-access__map" id="content-map">
@@ -238,16 +238,16 @@
         <!-- /#access -->
         <nav class="btn-category appear up">
           <ul class="item">
-            <li><a href="/first/first.html"><span class="btn-category__first"></span><i>初めての方へ</i></a></li>
-            <li><a href="/treatment/treatment.html"><span class="btn-category__care"></span><i>診療について</i></a></li>
-            <li><a href="/staff/staff.html"><span class="btn-category__staff"></span><i>スタッフ紹介</i></a></li>
-            <li class="u-hidden-pc"><a href="/faq/faq.html"><span class="btn-category__faq"></span><i>よくあるご質問</i></a>
+            <li><a href=" <?php echo esc_url( home_url('/first')); ?>"><span class="btn-category__first"></span><i>初めての方へ</i></a></li>
+            <li><a href=" <?php echo esc_url( home_url('/treatment')); ?>"><span class="btn-category__care"></span><i>診療について</i></a></li>
+            <li><a href=" <?php echo esc_url( home_url('/staff')); ?>"><span class="btn-category__staff"></span><i>スタッフ紹介</i></a></li>
+            <li class="u-hidden-pc"><a href=" <?php echo esc_url( home_url('/faq')); ?>"><span class="btn-category__faq"></span><i>よくあるご質問</i></a>
             </li>
           </ul>
         </nav>
         <nav class="btn-topicpath">
           <ul>
-            <li><a href="/">TOP</a></li>
+            <li><a href=" <?php echo esc_url( home_url('/')); ?>">TOP</a></li>
             <li>初めての方へ</li>
           </ul>
         </nav>
@@ -258,7 +258,7 @@
     <footer class="p-footer">
       <div class="p-footer__label">
         <h2 class="p-footer__logo">
-          <img src="/images/common/riv_logo_official2.png" />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" />
         </h2>
         <p class="p-footer__subject">
           一般歯科 / 歯科口腔外科 / 矯正歯科 / 小児歯科
@@ -363,12 +363,12 @@
       <!-- /.p-open-time -->
       <nav class="p-footer__nav">
         <ul>
-          <li><a href="/first/first.html" class="animsition-link m-button-arrow-l">初めての方へ</a></li>
-          <li><a href="/treatment/treatment.html" class="animsition-link m-button-arrow-l">診療について</a></li>
-          <li><a href="/staff/staff.html" class="animsition-link m-button-arrow-l">スタッフ紹介</a></li>
-          <li><a href="/faq/faq.html" class="animsition-link m-button-arrow-l">よくあるご質問</a></li>
-          <li><a href="/news/news.html" class="animsition-link m-button-arrow-l">お知らせ</a></li>
-          <li><a href="/recruit/recruit.html" class="animsition-link m-button-arrow-l">採用情報</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/first')); ?>" class="animsition-link m-button-arrow-l">初めての方へ</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/treatment')); ?>" class="animsition-link m-button-arrow-l">診療について</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/staff')); ?>" class="animsition-link m-button-arrow-l">スタッフ紹介</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/faq')); ?>" class="animsition-link m-button-arrow-l">よくあるご質問</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/news')); ?>" class="animsition-link m-button-arrow-l">お知らせ</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/recruit')); ?>" class="animsition-link m-button-arrow-l">採用情報</a></li>
         </ul>
       </nav>
       <div class="p-footer__copyright">
@@ -380,12 +380,12 @@
       <div class="l-menu-sp__inner">
         <nav class="l-menu-sp__nav">
           <ul>
-            <li><a class="animsition-link" href="/first/first.html">初めての方へ</a></li>
-            <li><a class="animsition-link" href="/treatment/treatment.html">診療について</a></li>
-            <li><a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a></li>
-            <li><a class="animsition-link" href="/faq/faq.html">よくあるご質問</a></li>
-            <li><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-            <li><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/first')); ?>">初めての方へ</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/treatment')); ?>">診療について</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/staff')); ?>">スタッフ紹介</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a></li>
           </ul>
           <div class="reserve-btn-wrap">
             <div class="reserve-btn-tel">
@@ -407,14 +407,7 @@
     <!-- /.l-menu-sp -->
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../scripts/vendor/animsition.min.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll.js"></script>
-  <script src="../scripts/libs/text-animation.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
-  <script src="../scripts/libs/date.js"></script>
-  <script src="../scripts/c-main.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>      
 </body>
 
 </html>
