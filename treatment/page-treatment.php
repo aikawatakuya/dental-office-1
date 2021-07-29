@@ -16,7 +16,7 @@
   <div class="treatment-wrapper animsition">
     <header id="header" class="p-header">
       <div class="logo">
-        <a class="animsition-link" href="/">
+        <a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="">
         </a>
       </div>
@@ -27,19 +27,19 @@
         <nav class="pc-nav">
           <ul class="pc-nav__list">
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/first/first.html">初めての方へ</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/first')); ?>">初めての方へ</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/treatment/treatment.html">診療について</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/treatment')); ?>">診療について</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/staff')); ?>">スタッフ紹介</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/faq/faq.html">よくあるご質問</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a>
             </li>
             <li class="pc-nav__item">
-              <a class="animsition-link" href="/recruit/recruit.html">採用情報</a>
+              <a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a>
             </li>
           </ul>
         </nav>
@@ -121,20 +121,20 @@
           <!-- /tr-menu -->
           <nav class="btn-category appear up">
             <ul class="item">
-              <li><a class="animsition-link" href="/first/first.html"><span
+              <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/first')); ?>"><span
                     class="btn-category__first"></span><i>初めての方へ</i></a></li>
-              <li><a class="animsition-link" href="/treatment/treatment.html"><span
+              <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/treatment')); ?>"><span
                     class="btn-category__care"></span><i>診療について</i></a></li>
-              <li><a class="animsition-link" href="/staff/staff.html"><span
+              <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/staff')); ?>"><span
                     class="btn-category__staff"></span><i>スタッフ紹介</i></a></li>
-              <li class="u-hidden-pc"><a class="animsition-link" href="/faq/faq.html"><span
+              <li class="u-hidden-pc"><a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>"><span
                     class="btn-category__faq"></span><i>よくあるご質問</i></a>
               </li>
             </ul>
           </nav>
           <nav class="btn-topicpath">
             <ul>
-              <li><a class="animsition-link" href="/">TOP</a></li>
+              <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/')); ?>">TOP</a></li>
               <li>診療について</li>
             </ul>
           </nav>
@@ -250,12 +250,12 @@
       <!-- /.p-open-time -->
       <nav class="p-footer__nav">
         <ul>
-          <li><a href="/first/first.html" class="animsition-link m-button-arrow-l">初めての方へ</a></li>
-          <li><a href="/treatment/treatment.html" class="animsition-link m-button-arrow-l">診療について</a></li>
-          <li><a href="/staff/staff.html" class="animsition-link m-button-arrow-l">スタッフ紹介</a></li>
-          <li><a href="/faq/faq.html" class="animsition-link m-button-arrow-l">よくあるご質問</a></li>
-          <li><a href="/news/news.html" class="animsition-link m-button-arrow-l">お知らせ</a></li>
-          <li><a href="/recruit/recruit.html" class="animsition-link m-button-arrow-l">採用情報</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/first')); ?>" class="animsition-link m-button-arrow-l">初めての方へ</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/treatment')); ?>" class="animsition-link m-button-arrow-l">診療について</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/staff')); ?>" class="animsition-link m-button-arrow-l">スタッフ紹介</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/faq')); ?>" class="animsition-link m-button-arrow-l">よくあるご質問</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/news')); ?>" class="animsition-link m-button-arrow-l">お知らせ</a></li>
+          <li><a href=" <?php echo esc_url( home_url('/recruit')); ?>" class="animsition-link m-button-arrow-l">採用情報</a></li>
         </ul>
       </nav>
       <div class="p-footer__copyright">
@@ -267,12 +267,12 @@
       <div class="l-menu-sp__inner">
         <nav class="l-menu-sp__nav">
           <ul>
-            <li><a class="animsition-link" href="/first/first.html">初めての方へ</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/first')); ?>">初めての方へ</a></li>
             <li><a class="animsition-link" href="/treatment/treatment.html">診療について</a></li>
-            <li><a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a></li>
-            <li><a class="animsition-link" href="/faq/faq.html">よくあるご質問</a></li>
-            <li><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-            <li><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/staff')); ?>">スタッフ紹介</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/faq')); ?>">よくあるご質問</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>">お知らせ</a></li>
+            <li><a class="animsition-link" href=" <?php echo esc_url( home_url('/recruit')); ?>">採用情報</a></li>
           </ul>
           <div class="reserve-btn-wrap">
             <div class="reserve-btn-tel">
