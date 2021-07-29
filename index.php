@@ -432,7 +432,7 @@
               </div>
             </div>
             <div class="reserve-btn-net">
-              <h4>ネット予約はこちら</h4>
+              <h4>ネット予約はこちあ</h4>
               <div class="reserve-btn">
                 <a href="https://beauty.hotpepper.jp/" target="_blank"><span>ONLINE RESERVE</span></a>
               </div>
